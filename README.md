@@ -1,6 +1,6 @@
 # NASA Mars Explorer
 
-Rest service to receive commands in a Mars Robot
+Rest service to receive commands
 
 
 ## Compile
