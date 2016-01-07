@@ -1,7 +1,8 @@
 # NASA Mars Explorer
 
-Rest service to receive commands
+[ ![Codeship Status for marceldiass/mars](https://codeship.com/projects/fcbdd4b0-97bc-0133-de51-66b8883e9f8d/status?branch=master)](https://codeship.com/projects/125899)
 
+Rest service to receive commands
 
 ## Compile
 
