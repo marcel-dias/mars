@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.marceldias</groupId>
+  <groupId>io.github.marceldiass</groupId>
   <artifactId>mars</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>war</packaging>
 
   <name>NASA Mars Explorer</name>
@@ -72,5 +72,34 @@
         <version>2.19.1</version>
       </plugin>
     </plugins>
+
+    <extensions>
+      <extension>
+        <groupId>ar.com.synergian</groupId>
+        <artifactId>wagon-git</artifactId>
+        <version>0.2.5</version>
+      </extension>
+    </extensions>
   </build>
+
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>MarcelDias Releases</name>
+      <url>git:releases://git@github.com:marceldiass/maven-repo.git</url>
+    </repository>
+    <snapshotRepository>
+      <id>github</id>
+      <name>MarcelDias Snapshots</name>
+      <url>git:snapshots://git@github.com:marceldiass/maven-repo.git</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>synergian-repo</id>
+      <url>https://raw.github.com/synergian/wagon-git/releases</url>
+    </pluginRepository>
+  </pluginRepositories>
+
 </project>
