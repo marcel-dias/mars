@@ -6,13 +6,17 @@ Rest service to receive commands
 
 ## Compile
 
-Use Maven 3 to compile the project
+Use Maven 3 to compile this project
 
 ## Deploy
 
 There is a jboss-web.xml file mapping the context root to /
 
 So if you deploy in a wildfly the path will be /rest/mars
+
+## Docker Image
+
+docker run -d -p 8080:8080 marceldiass/mars
 
 ## Consume
 
